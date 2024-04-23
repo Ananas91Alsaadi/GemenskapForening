@@ -1,0 +1,18 @@
+{
+    "nav": {
+        "home": "Hem",
+        "contact": "Kontakta oss",
+        "activity": "aktivitet",
+        "aboutIslam": "Om islam",
+        "aboutMosque": "Om moskén",
+        "other": "Annan",
+        "members": "Medlemmar"
+    },
+
+    "headerText":"Islamik Centrum I Ronneby",
+    "timeTable":{
+        "salah":"Salah",
+        "time":"Tid"
+    }
+
+}

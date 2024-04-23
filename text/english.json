@@ -1,0 +1,18 @@
+{
+        "nav": {
+            "home": "Home",
+            "contact": "Contact us",
+            "activity": "activity",
+            "aboutIslam": "About Islam",
+            "aboutMosque": "About Mosque",
+            "other": "Other",
+            "members": "Members"
+        },
+        "headerText":"Islamic Center In Ronneby",
+
+        "timeTable":{
+            "salah":"Salah",
+            "time":"Time"
+        }
+
+}

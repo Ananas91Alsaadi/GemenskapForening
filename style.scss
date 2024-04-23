@@ -1,0 +1,151 @@
+$primary-color: #1f589d;
+$secondary-color: #77a795;
+$accent-color: #658099;
+
+*{
+    margin: auto;
+    font-size: 1.2vw;
+    font-family:sans-serif;
+    color: $primary-color;
+
+}
+.link-Button {
+    cursor: pointer;
+}
+
+body{
+    margin: auto;
+}
+
+img {
+    display: block;
+
+}
+
+header {
+    width: 100%;
+
+    nav {
+        width: 100%;
+        height: 6.5vw;
+        margin: auto;
+        align-items: center;
+        position: fixed;
+        background-color: rgba(255,255,255,0.9);
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 3px 40px rgba(0, 0, 0, 0.1);
+
+        #nav-container{
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+
+
+        #s-logo {
+            width: 5%;
+        }
+        
+        #nav-bar{
+
+            width: 70%;
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding: 0;
+
+            li{
+                a{
+                text-decoration: none;
+
+                &:hover{
+                    color: $secondary-color;
+
+                }
+            }
+            }
+        }
+
+        #lang{
+
+            background-color: $accent-color;
+        }
+    }
+    }}
+
+    #top{
+        position: relative;
+
+        #head-img{
+            display: block;
+            width: 100vw;
+            height: 50vw;
+        }
+
+        #over-text{
+            position: absolute;
+            top: 30%;
+            left: 5%; 
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            background-color: $secondary-color;
+            border-radius: 15px;
+            padding: 2%;
+            *{color: aliceblue;}
+
+            h1{
+                text-align: center;
+                margin: 1vw;
+                font-size: 3vw;
+            }
+
+        }
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin-top: 10%;
+    display: flex;
+
+    #today-date{
+        margin-bottom: 1vw;
+        background-color: $secondary-color;
+        padding: 0.8vw;
+        border-radius: 12px;
+        color: aliceblue;
+    }
+
+    #times{
+        
+        width: 25vw;
+        border: 1px #ddd solid;
+        border-radius: 15px;
+        background-color: hsla(199, 100%, 96%, 0.404);
+
+        tr:first-child{
+            text-align: center;
+           th{ margin-bottom: 50vw;}
+
+            * {
+                color: $secondary-color;
+            }
+        }
+
+        tr {
+            width: 90%;
+            text-align: center;
+            margin: 1vw;
+        }
+    }
+}
+
+footer{
+    img{
+        width: 40%;
+    }
+
+}

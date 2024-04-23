@@ -1,0 +1,18 @@
+{
+    "nav": {
+        "home": "الرئيسية",
+        "contact": "اتصل بنا",
+        "activity": "الأنشطة",
+        "aboutIslam": "عن الإسلام",
+        "aboutMosque": "عن المسجد",
+        "other": "متفرقات",
+        "members": "الاعضاء"
+    },
+    "headerText":"المركز الإسلامي في رونيبي",
+    "timeTable":{
+        "salah":"الصلاة",
+        "time":"التوقيت"
+    }
+
+
+}
