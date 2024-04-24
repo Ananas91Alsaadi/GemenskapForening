@@ -93,7 +93,7 @@ main {
 }
 main #today-date {
   margin-bottom: 1vw;
-  background-color: #77a795;
+  background-color: #599aac;
   padding: 0.8vw;
   border-radius: 12px;
   color: aliceblue;
@@ -104,21 +104,43 @@ main #times {
   border-radius: 15px;
   background-color: hsla(199, 100%, 96%, 0.404);
 }
-main #times tr:first-child {
-  text-align: center;
+main #times .head-time {
+  display: flex;
+  margin: 2vw 0vw;
 }
-main #times tr:first-child th {
-  margin-bottom: 50vw;
+main #times .head-time * {
+  color: #599aac;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-main #times tr:first-child * {
+main #times .one-time {
+  border: 1px #77a795 solid;
+  border-radius: 50px;
+  margin: 1vw 0.5vw;
+  display: flex;
+  padding: 0.5vw;
+  background-color: white;
+}
+main #times .one-time * {
   color: #77a795;
 }
-main #times tr {
-  width: 90%;
+main #times .next-time {
+  background-color: #77a795;
+  box-shadow: 0 0px 5px #77a795;
+}
+main #times .next-time * {
+  color: aliceblue;
+}
+main #emam * {
   text-align: center;
+}
+main #emam img {
+  border-radius: 50%;
+  border: 3px solid #fff; /* White border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
   margin: 1vw;
 }
 
 footer img {
-  width: 40%;
+  width: 35%;
 }/*# sourceMappingURL=style.css.map */

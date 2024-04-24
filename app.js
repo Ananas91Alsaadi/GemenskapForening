@@ -75,19 +75,34 @@ fetch('https://api.aladhan.com/v1/timingsByCity/23-04-2024?city=Ronneby&country=
 
 function populateTable(e) {
   console.log(textData);
-  document.getElementById('times').innerHTML = `          <tr>
-  <th>${textData.timeTable.salah}</th>
-  <th>${textData.timeTable.time}</th>
-</tr>
+
+  document.getElementById('times').innerHTML = `          <div class="head-time">
+  <i class="fa-solid fa-person-praying"></i>
+  <span>${textData.timeTable.salah}</span>
+  <span>${textData.timeTable.time}</span>
+</div>
 `;
-  var table = document.getElementById('times');
+var now = new Date();
+var currentTime = now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes(); 
+
+  var comingTime=false;
 
   e.forEach(function(prayer) {
-    var row = table.insertRow();
-    var nameCell = row.insertCell(0) ;
-    var timeCell = row.insertCell(1);
-    nameCell.textContent = prayer.name;
-    timeCell.textContent = prayer.time;
+
+    console.log(prayer.time);
+    console.log(currentTime);
+    console.log(comingTime);
+
+
+    document.getElementById('times').innerHTML += ` <div class="one-time ${prayer.time >= currentTime && !comingTime ? 'next-time':''}">
+    <i class="fa-solid fa-clock"></i>
+    <span>${prayer.name}</span>
+    <span>${prayer.time}</span>
+  </div>
+  `;
+
+  prayer.time >= currentTime? comingTime=true :'';
+
   });
 
   var tableRows = document.querySelectorAll('#times tr');
@@ -96,7 +111,6 @@ function populateTable(e) {
     row.style.border = '1px solid #000';
     
   });
-  
   
 }
 
