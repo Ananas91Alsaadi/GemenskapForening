@@ -6,13 +6,25 @@
             "aboutIslam": "About Islam",
             "aboutMosque": "About Mosque",
             "other": "Other",
-            "members": "Members"
+            "members": "Members&Donation"
         },
         "headerText":"Islamic Center In Ronneby",
 
         "timeTable":{
             "salah":"Salah",
             "time":"Time"
-        }
+        },
+        "sadakaBlog":"Sadaka, Zakat, and giving to mosques are important in Islam. Sadaka means giving voluntarily, Zakat is giving a certain part of your wealth, and donations to mosques help keep them running and support the community. These actions show kindness, togetherness, and taking care of others, which are all valued in Islam.",
+        "donate":"Donation",
+        "contact":"<p>Email: info@isc-Ronneby.org </p> <p>Tele: 0700000000</p><p>Adress: Hagtornsvägen2,372 53 Kallinge</p>",
+        "socialMedia":"Find us",
+        "islamParagraph":"Islam, one of the world's major monotheistic religions, emerged in the 7th century CE in the Arabian Peninsula through the teachings of the Prophet Muhammad. Central to Islam is the belief in one God, Allah, and the adherence to the Five Pillars: Shahada (faith), Salah (prayer), Zakat (charity), Sawm (fasting during Ramadan), and Hajj (pilgrimage to Mecca). The Quran, Islam's holy book, is considered the word of God as revealed to Prophet Muhammad. Islam encompasses a rich cultural and spiritual heritage, emphasizing principles of compassion, justice, and community. With over a billion followers worldwide, Islam has diversified into various sects and interpretations, shaping societies and cultures across continents. Its profound influence spans from art and architecture to law and philosophy, making it a significant force in global history and contemporary affairs.",
+        "islamHead":"About Islam",
+        "mosqueParagraph":"Recently established, Ronneby Mosque embodies the town's evolving diversity and cultural vibrancy. Its elegant architecture provides a serene space for worship and community engagement, fostering inclusivity and dialogue among people of various backgrounds. Serving as a hub for spiritual and social activities, the mosque enriches Ronneby's cultural landscape, symbolizing unity amidst diversity.",
+        "mosqueHead":"About Mosque",
+        "IBAN":"SE4280000816959646573353"
+
+    
+
 
 }

@@ -11,6 +11,10 @@ $light-color:aliceblue;
     color: $font-prime-color;
 
 }
+
+a{
+    text-decoration: none;
+}
 .link-Button {
     cursor: pointer;
 }
@@ -82,7 +86,7 @@ header {
 
         #head-img{
             display: block;
-            width: 100vw;
+            width: 100%;
             height: 50vw;
         }
 
@@ -158,22 +162,122 @@ main {
         }
     }
 
-    #emam {
+    #sadaka {
         
         *{text-align: center;}
-        img{
-            border-radius: 50%;
-            border: 3px solid #fff; /* White border */
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
-            margin: 1vw;
+        width: 50%;
+    }
+}
 
-        }
+
+.buttons{
+
+    background-color: $primary-color;
+    color: $light-color;
+    *{color: $light-color;}
+    width: fit-content;
+    padding: 1vw;
+    border-radius: 10px;
+    margin: 1vw auto;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0 3px 40px $secondary-color;
+        transform: scale(1.1);
+
     }
 }
 
 footer{
+    display: flex;
+        margin-top: 10%;
+        border-top: 5vw $primary-color solid;
+    justify-content: center;
+    *{text-align: center;
+        font-size: 1.1rem;}
+
     img{
-        width: 35%;
+        width: 30%;
+
     }
 
+    #contact{
+        width: 25%;
+        *{margin-bottom: 0.8vw;}
+
+    }
+
+    #social-media{
+        i{font-size: 4vw;
+            margin: 1vw;
+            color: $primary-color;
+        }
+        width: 25%;
+    }
+}
+
+#islam{
+    display: flex;
+    flex-direction: column;
+
+    *{
+        text-align: center;
+    }
+
+    h1{
+        margin-bottom: 5vw;
+        font-size: 2rem;
+    }
+}
+
+#mosque{
+    display: flex;
+    flex-direction: column;
+
+    *{
+        text-align: center;
+    }
+
+    h1{
+        margin-bottom: 5vw;
+        font-size: 2rem;
+    }
+}
+
+#contact-page{
+    display: flex;
+    flex-direction: column;
+
+    *{
+        text-align: center;
+    }
+
+    h1{
+        margin-bottom: 5vw;
+        font-size: 2rem;
+    }
+}
+
+#donate-main{
+    display: flex;
+    flex-direction: column;
+    h1{
+        margin-bottom: 5vw;
+        font-size: 2rem;
+    }
+
+}
+#donate-page{
+    display: flex;
+
+
+}
+
+#donate-bar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    img{
+        width: 15vw;
+    }
 }

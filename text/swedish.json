@@ -6,13 +6,27 @@
         "aboutIslam": "Om islam",
         "aboutMosque": "Om moskén",
         "other": "Annan",
-        "members": "Medlemmar"
+        "members": "Medlemmar&Donation"
     },
 
     "headerText":"Islamik Centrum I Ronneby",
     "timeTable":{
         "salah":"Salah",
         "time":"Tid"
-    }
+    },
+    "sadakaBlog":"Sadaka, Zakat och att ge till moskéer är viktigt inom islam. Sadaka betyder att ge frivilligt, Zakat är att ge en viss del av ens förmögenhet, och donationer till moskéer hjälper till att hålla dem igång och stödja gemenskapen. Dessa handlingar visar vänlighet, sammanhållning och omsorg om andra, vilket alla är värderade inom islam.",
+    "donate":"Donation",
+    "contact":"<p>E-post: info@isc-Ronneby.org </p> <p>Tele: 0700000000</p><p>Adress: Hagtornsvägen2,372 53 Kallinge</p>",
+    "socialMedia":"hitta oss",
+    "islamParagraph":"Islam, en av världens stora monoteistiska religioner, uppstod på 600-talet e.Kr. på Arabiska halvön genom Profeten Muhammeds läror. Central för islam är tron på en Gud, Allah, och att följa de Fem Pelarna: Shahada (tron), Salah (bön), Zakat (välgörenhet), Sawm (fasta under Ramadan) och Hajj (pilgrimsfärd till Mecka). Koranen, islams heliga bok, betraktas som Guds ord uppenbarat för Profeten Muhammed. Islam omfattar en rik kulturell och andlig arv, med betoning på principer som medkänsla, rättvisa och gemenskap. Med över en miljard följare världen över har islam diversifierats till olika sekter och tolkningar, vilket har format samhällen och kulturer över kontinenter. Dess djupa inflytande sträcker sig från konst och arkitektur till lag och filosofi, vilket gör den till en betydande kraft i världshistorien och samtida frågor.",
+    "islamHead":"Om islam",
+    "mosqueParagraph":"Nyligen etablerade Ronneby moské speglar stadens växande mångfald och kulturella vitalitet. Dess eleganta arkitektur erbjuder en fridfull plats för tillbedjan och samhällsengagemang, främjande av inkludering och dialog mellan människor från olika bakgrunder. Som en knutpunkt för andliga och sociala aktiviteter berikar moskén Ronnebys kulturella landskap och symboliserar enhet mitt i mångfalden.",
+    "mosqueHead":"Om moskén",
+    "IBAN":"SE4280000816959646573353"
+
+
+
+
+
 
 }

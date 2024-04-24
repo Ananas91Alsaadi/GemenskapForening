@@ -5,6 +5,10 @@
   color: #1f589d;
 }
 
+a {
+  text-decoration: none;
+}
+
 .link-Button {
   cursor: pointer;
 }
@@ -63,7 +67,7 @@ header #top {
 }
 header #top #head-img {
   display: block;
-  width: 100vw;
+  width: 100%;
   height: 50vw;
 }
 header #top #over-text {
@@ -131,16 +135,113 @@ main #times .next-time {
 main #times .next-time * {
   color: aliceblue;
 }
-main #emam * {
+main #sadaka {
+  width: 50%;
+}
+main #sadaka * {
   text-align: center;
 }
-main #emam img {
-  border-radius: 50%;
-  border: 3px solid #fff; /* White border */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
-  margin: 1vw;
+
+.buttons {
+  background-color: #599aac;
+  color: aliceblue;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vw;
+  border-radius: 10px;
+  margin: 1vw auto;
+  cursor: pointer;
+}
+.buttons * {
+  color: aliceblue;
+}
+.buttons:hover {
+  box-shadow: 0 3px 40px #77a795;
+  transform: scale(1.1);
 }
 
+footer {
+  display: flex;
+  margin-top: 10%;
+  border-top: 5vw #599aac solid;
+  justify-content: center;
+}
+footer * {
+  text-align: center;
+  font-size: 1.1rem;
+}
 footer img {
-  width: 35%;
+  width: 30%;
+}
+footer #contact {
+  width: 25%;
+}
+footer #contact * {
+  margin-bottom: 0.8vw;
+}
+footer #social-media {
+  width: 25%;
+}
+footer #social-media i {
+  font-size: 4vw;
+  margin: 1vw;
+  color: #599aac;
+}
+
+#islam {
+  display: flex;
+  flex-direction: column;
+}
+#islam * {
+  text-align: center;
+}
+#islam h1 {
+  margin-bottom: 5vw;
+  font-size: 2rem;
+}
+
+#mosque {
+  display: flex;
+  flex-direction: column;
+}
+#mosque * {
+  text-align: center;
+}
+#mosque h1 {
+  margin-bottom: 5vw;
+  font-size: 2rem;
+}
+
+#contact-page {
+  display: flex;
+  flex-direction: column;
+}
+#contact-page * {
+  text-align: center;
+}
+#contact-page h1 {
+  margin-bottom: 5vw;
+  font-size: 2rem;
+}
+
+#donate-main {
+  display: flex;
+  flex-direction: column;
+}
+#donate-main h1 {
+  margin-bottom: 5vw;
+  font-size: 2rem;
+}
+
+#donate-page {
+  display: flex;
+}
+
+#donate-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#donate-bar img {
+  width: 15vw;
 }/*# sourceMappingURL=style.css.map */
