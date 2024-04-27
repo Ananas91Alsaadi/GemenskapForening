@@ -4,11 +4,16 @@ $accent-color: #658099;
 $font-prime-color:#1f589d;
 $light-color:aliceblue;
 
+$form-padding: 20px;
+$label-width: 120px;
+
+
 *{
     margin: auto;
     font-size: 1.2vw;
     font-family:sans-serif;
     color: $font-prime-color;
+    transition:  0.3s ease;
 
 }
 
@@ -137,7 +142,6 @@ main {
         font-weight: bold;
             font-size: 1.5rem;
     }
-           display: flex;
            margin: 2vw 0vw;
 
         }
@@ -171,7 +175,7 @@ main {
 
 
 .buttons{
-
+    border: 0;
     background-color: $primary-color;
     color: $light-color;
     *{color: $light-color;}
@@ -261,23 +265,91 @@ footer{
 #donate-main{
     display: flex;
     flex-direction: column;
+
     h1{
         margin-bottom: 5vw;
         font-size: 2rem;
     }
 
 }
+
 #donate-page{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 
 }
+#iban{
+    color: $light-color;
+    background-color: $font-prime-color;
+    margin: 2vw auto 5vw auto;
+    padding: 1vw;
+    border-radius: 15px;
+}
+
+
+
+
 
 #donate-bar{
     display: flex;
-    flex-direction: column;
     text-align: center;
     img{
         width: 15vw;
     }
+}
+
+
+#sign-member{ 
+
+    display: flex;
+    border: 1px #ddd solid;
+    border-radius: 15px;
+    background-color: hsla(199, 100%, 96%, 0.404);
+    padding: 1vw;
+    width: 50vw;
+
+    form {
+        padding: $form-padding;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 100%;
+        legend {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-bottom: 3vw;
+        }
+      
+        div {
+          margin-bottom: 2vw;
+          
+      
+          label {
+            display: inline-block;
+            width: 20vw;
+            font-weight: bold;
+          }
+      
+          input,
+          select {
+            width: calc(100% - #{$label-width} - 10px); // Adjust based on label width
+            padding: 0.7vw;
+            border: 0.15vw solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+      
+            &:focus {
+              border-color: $accent-color;
+              outline: none;
+            }
+          }
+      
+       
+        }
+      }
+}
+
+input::placeholder{
+    color: #ccc;
 }

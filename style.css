@@ -3,6 +3,7 @@
   font-size: 1.2vw;
   font-family: sans-serif;
   color: #1f589d;
+  transition: 0.3s ease;
 }
 
 a {
@@ -109,7 +110,6 @@ main #times {
   background-color: hsla(199, 100%, 96%, 0.404);
 }
 main #times .head-time {
-  display: flex;
   margin: 2vw 0vw;
 }
 main #times .head-time * {
@@ -143,6 +143,7 @@ main #sadaka * {
 }
 
 .buttons {
+  border: 0;
   background-color: #599aac;
   color: aliceblue;
   width: -moz-fit-content;
@@ -235,13 +236,71 @@ footer #social-media i {
 
 #donate-page {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#iban {
+  color: aliceblue;
+  background-color: #1f589d;
+  margin: 2vw auto 5vw auto;
+  padding: 1vw;
+  border-radius: 15px;
 }
 
 #donate-bar {
   display: flex;
-  flex-direction: column;
   text-align: center;
 }
 #donate-bar img {
   width: 15vw;
+}
+
+#sign-member {
+  display: flex;
+  border: 1px #ddd solid;
+  border-radius: 15px;
+  background-color: hsla(199, 100%, 96%, 0.404);
+  padding: 1vw;
+  width: 50vw;
+}
+#sign-member form {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+#sign-member form legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 3vw;
+}
+#sign-member form div {
+  margin-bottom: 2vw;
+}
+#sign-member form div label {
+  display: inline-block;
+  width: 20vw;
+  font-weight: bold;
+}
+#sign-member form div input,
+#sign-member form div select {
+  width: calc(100% - 120px - 10px);
+  padding: 0.7vw;
+  border: 0.15vw solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+#sign-member form div input:focus,
+#sign-member form div select:focus {
+  border-color: #658099;
+  outline: none;
+}
+
+input::-moz-placeholder {
+  color: #ccc;
+}
+
+input::placeholder {
+  color: #ccc;
 }/*# sourceMappingURL=style.css.map */

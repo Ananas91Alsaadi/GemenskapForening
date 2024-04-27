@@ -8,8 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script> 
 
-  <title>Islamik Centrum I Ronneby</title>
+    <title>Islamik Centrum I Ronneby</title>
 </head>
 
 <body>
@@ -30,28 +33,42 @@
   </header>
 
   <main id="donate-main">
-    <h1 id="donateHead">asfasdasd</h1>
+    <h1 id="donateHead"></h1>
 
 <div id="donate-page">
-    <div id="sign member">
+  <div id="donate-bar">
+    <div>
+    Swish
+      <a href="https://app.swish.nu/1/p/sw/?sw=1231706472&msg=&src=qr"><img src="./img/8e2915b5-32fa-4b4b-a24c-57a0f8a89a2c.jpg" alt=""></a>
+     <a href="https://app.swish.nu/1/p/sw/?sw=1231706472&msg=&src=qr"> click to Pay with swish</a> 
 
-      <h2>Sign Up Form</h2>
-      <form action="/submit" method="post">
+    </div>
+      <div>
+
+      Master/Visa card
+      <a href="https://buy.stripe.com/cN2168eTH0QE2WI000"> <img src="./img/14f054b9-1e94-41cb-a789-b71c928e2253.jpg" alt=""></a>
+      <a href="https://buy.stripe.com/cN2168eTH0QE2WI000"> click to Pay with Master/Visa card</a> 
+
+    </div>
+      <div>
+
+      PayPal
+      <a href="https://www.paypal.com/qrcodes/managed/1429128f-ce4b-4fd3-8179-bc0e99344dd0?utm_source=old_merchant_lp"> <img src="./img/ce727135-0f13-415f-bb1b-676a96bff371.jpg" alt=""></a>
+      <a href="https://www.paypal.com/qrcodes/managed/1429128f-ce4b-4fd3-8179-bc0e99344dd0?utm_source=old_merchant_lp"> click to Pay with PayPal</a> 
+
+    </div>
+    
+  </div>
+  <div id="iban">IBAN: SE4280000816959646573353</div>
+    <div id="sign-member">
+
+      <form id="joinUsForm">
+        
+        <legend>Join US</legend>
+
         <div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div>
-          <label for="personal_number">Personal Number:</label>
-          <input type="text" id="personal_number" name="personal_number" required>
+          <input type="text" id="name" name="name" placeholder="Firstame Lastname" required>
         </div>
         <div>
           <label for="gender">Gender:</label>
@@ -59,43 +76,30 @@
             <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
-            <option value="other">Other</option>
           </select>
         </div>
         <div>
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="email@domain.com" required>
         </div>
         <div>
-          <button type="submit">Sign Up</button>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="07xxxxxxxx" required>
+        </div>
+        <div>
+          <label for="personal_number">Personal Number:</label>
+          <input type="number" id="personal_number" name="personal_number" placeholder="YYYYMMDDxxx" required>
+        </div>
+       
+        <div>
+          <button class="buttons" type="submit" >Join Us</button>
         </div>
       </form>
 
 
     </div>
 
-    <div id="donate-bar">
-      <div>
-      Swish
-        <a href="https://app.swish.nu/1/p/sw/?sw=1231706472&msg=&src=qr"><img src="./img/8e2915b5-32fa-4b4b-a24c-57a0f8a89a2c.jpg" alt=""></a>
-       <a href="https://app.swish.nu/1/p/sw/?sw=1231706472&msg=&src=qr"> click to Pay with swish</a> 
-
-      </div>
-        <div>
-
-        Master/Visa card
-        <a href="https://buy.stripe.com/cN2168eTH0QE2WI000"> <img src="./img/14f054b9-1e94-41cb-a789-b71c928e2253.jpg" alt=""></a>
-        <a href="https://buy.stripe.com/cN2168eTH0QE2WI000"> click to Pay with Master/Visa card</a> 
-
-      </div>
-        <div>
-
-        PayPal
-        <a href="https://www.paypal.com/qrcodes/managed/1429128f-ce4b-4fd3-8179-bc0e99344dd0?utm_source=old_merchant_lp"> <img src="./img/ce727135-0f13-415f-bb1b-676a96bff371.jpg" alt=""></a>
-        <a href="https://www.paypal.com/qrcodes/managed/1429128f-ce4b-4fd3-8179-bc0e99344dd0?utm_source=old_merchant_lp"> click to Pay with PayPal</a> 
-
-      </div>
-    </div>
+    
   </div>
   </main>
 
