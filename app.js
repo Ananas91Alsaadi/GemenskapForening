@@ -142,7 +142,7 @@ function createNav() {
 
   var data = `          
   <ul>
-    <li><a href="/">${textData.nav.home}</a></li>
+    <li><a href="/#">${textData.nav.home}</a></li>
     <li><a href="./contact.html">${textData.nav.contact}</a></li>
     <li><a href="#">${textData.nav.activity}</a></li>
     <li><a href="./islam.html">${textData.nav.aboutIslam}</a></li>
